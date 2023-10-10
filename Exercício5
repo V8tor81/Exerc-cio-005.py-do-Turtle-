@@ -1,0 +1,31 @@
+#exercicio005.py
+
+"""
+Exercícios
+
+1) Aumente o tamanho do envelope
+Aumentei
+2) Use formas diferentes da tartaruga enquanto faz a aba e enquanto faz o corpo
+usei
+3) Deixe o envelope colorido
+deixei
+4) Reduza o aba do envelope
+reduzi
+"""
+
+import turtle
+
+
+turtle = turtle.Turtle()
+colors = [ 'purple', 'blue',"orange"]
+colors2=["pink","green","black"]
+for _ in [1, 2, 3]:
+    turtle.color(colors[_ % len(colors)]) 
+    turtle.forward(150)#alterei,além  de reduzir a aba eu reduzi o corpo do envelope tambem para ficar proporcinal(valor inicial meu=200)
+    turtle.right(120)
+
+for _ in [1, 2, 3, 4]:
+  turtle.color(colors2[_ % len(colors2)]) 
+  turtle.shape("turtle")
+  turtle.forward(150)#alterei
+  turtle.right(90)
